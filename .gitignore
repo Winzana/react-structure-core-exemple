@@ -1,0 +1,4 @@
+node_modules
+.docz
+build/
+.DS_Store

@@ -1,0 +1,47 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "sensenet": "https://github.com/Jm-Zion/sn-typedoc-theme.git",
+    "commonjs": "^0.0.1",
+    "jest": "^24.7.1",
+    "lint-staged": "^8.1.5",
+    "redux-logger": "^3.0.6",
+    "rollup": "^1.10.0",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.0",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-typescript2": "^0.20.1",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-origin-ordered-imports-rule": "^1.2.1",
+    "typedoc": "^0.14.2",
+    "typedoc-clarity-theme": "^1.1.0",
+    "typedoc-twilio-theme": "^1.0.0",
+    "typescript": "^3.4.3"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -cw",
+    "test": "jest --passWithNoTests",
+    "generate-doc": "node_modules/.bin/typedoc --out docs src/ --excludeNotExported --theme node_modules/sensenet/sn-theme",
+    "prettier": "prettier --write \"{,!(node_modules|dist|build|coverage)/**/}*.{js,ts,json}\"",
+    "tslint": "tslint --project tsconfig.json",
+    "tslint:fix": "tslint --project tsconfig.json --fix",
+    "pre-commit": "yarn tslint:fix && yarn build"
+  },
+  "dependencies": {
+    "@martin_hotell/rex-tils": "^2.1.1",
+    "@types/redux-logger": "^3.0.7",
+    "axios": "^0.18.0",
+    "redux": "^4.0.1",
+    "redux-saga": "^1.0.2"
+  }
+}

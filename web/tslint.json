@@ -1,0 +1,51 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "jsRules": {},
+  "rules": {
+    "no-magic-numbers": [true],
+    "no-namespace": true,
+    "no-non-null-assertion": true,
+    "await-promise": true,
+    "origin-ordered-imports": [true],
+    "no-console": [true, "log", "error"],
+    "no-debugger": true,
+    "no-eval": true,
+    "no-this-assignment": true,
+    "no-var-keyword": true,
+    "max-classes-per-file": [true, 1],
+    "no-duplicate-imports": true,
+    "completed-docs": [true, "enums", "functions", "methods"],
+    "increment-decrement": true,
+    "ordered-imports": false,
+    "unnecessary-else": true,
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-static-field",
+          "private-static-field",
+          "protected-static-field",
+          "public-instance-field",
+          "private-instance-field",
+          "protected-instance-field",
+          "public-constructor",
+          "private-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ],
+        "alphabetize": true
+      }
+    ]
+  },
+  "rulesDirectory": ["node_modules/tslint-origin-ordered-imports-rule/dist"],
+  "linterOptions": {
+    "exclude": [
+      "src/serviceWorker.ts",
+      "node_modules/**/*.ts",
+      "dist/**/*.ts",
+      ".docz"
+    ]
+  }
+}
