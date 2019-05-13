@@ -1,24 +1,27 @@
 {
   "name": "core",
   "version": "1.0.0",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
+  "main": "lib/index.js",
+  "module": "lib/index.es.js",
   "files": [
-    "dist"
+    "lib",
+    "src"
   ],
-  "types": "dist/index.d.ts",
+  "types": "lib/index.d.ts",
   "license": "MIT",
   "devDependencies": {
-    "sensenet": "https://github.com/Jm-Zion/sn-typedoc-theme.git",
+    "babel-plugin-external-helpers": "^6.22.0",
     "commonjs": "^0.0.1",
     "jest": "^24.7.1",
     "lint-staged": "^8.1.5",
     "redux-logger": "^3.0.6",
     "rollup": "^1.10.0",
     "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^4.2.0",
     "rollup-plugin-terser": "^4.0.4",
     "rollup-plugin-typescript2": "^0.20.1",
+    "sensenet": "https://github.com/Jm-Zion/sn-typedoc-theme.git",
     "tslint": "^5.16.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-origin-ordered-imports-rule": "^1.2.1",

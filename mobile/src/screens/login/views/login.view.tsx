@@ -1,8 +1,16 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import i18next from 'i18next';
 
-export const LoginView = () => (
+interface IProps {
+  /**
+   * Translation function
+   */
+  t: typeof i18next.t;
+}
+
+export const LoginView = ({ t }: IProps) => (
   <View>
-    <Text>Hello !!</Text>
+    <Text>Hello !! {t('welcomeToReact')}</Text>
   </View>
 );

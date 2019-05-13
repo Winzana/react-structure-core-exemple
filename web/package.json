@@ -19,6 +19,7 @@
     "typescript": "^3.4.3"
   },
   "scripts": {
+    "link-core": "yarn add link:../core",
     "start-doc": "docz dev --port 9000",
     "build-doc": "docz build",
     "start": "react-app-rewired start --scripts-version react-scripts-ts",

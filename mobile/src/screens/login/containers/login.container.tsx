@@ -1,9 +1,10 @@
 import { IAppState, UsersActions, usersSelector } from 'core';
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
+import { useTranslation, initReactI18next } from 'react-i18next';
 import { LoginView } from '../views/login.view';
 
-interface IProps {
+export interface IProps {
   /**
    * Implementation of getUser from redux
    */
@@ -15,12 +16,13 @@ interface IProps {
 }
 const LoginContainer = (props: IProps) => {
   const { getUsers, users } = props;
+  const { t } = useTranslation();
   useEffect(() => {
     if (users.length === 0) {
       getUsers();
     }
   }, [users]);
-  return <LoginView />;
+  return <LoginView t={t} />;
 };
 const mapStateToProps = (state: IAppState) => ({
   users: usersSelector(state),
