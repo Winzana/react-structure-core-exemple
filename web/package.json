@@ -29,7 +29,8 @@
     "prettier": "prettier --write \"{,!(node_modules|dist|build|coverage)/**/}*.{js,ts,json}\"",
     "tslint": "tslint --project tsconfig.json",
     "tslint:fix": "tslint --project tsconfig.json --fix",
-    "pre-commit": "yarn tslint:fix && yarn build"
+    "pre-commit": "yarn tslint:fix && yarn build",
+    "ui-feat": "/bin/sh ./scaffolding-ui.sh"
   },
   "devDependencies": {
     "@types/react-hot-loader": "^4.1.0",

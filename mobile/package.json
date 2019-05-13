@@ -11,7 +11,8 @@
     "prettier": "prettier --write \"{,!(node_modules|dist|build|coverage)/**/}*.{js,jsx,ts,tsx,json}\"",
     "tslint": "tslint --project tsconfig.json",
     "tslint:fix": "tslint --project tsconfig.json --fix",
-    "pre-commit": "yarn tslint:fix"
+    "pre-commit": "yarn tslint:fix",
+    "ui-feat": "/bin/sh ./scaffolding-ui.sh"
   },
   "dependencies": {
     "core": "file:../core",
