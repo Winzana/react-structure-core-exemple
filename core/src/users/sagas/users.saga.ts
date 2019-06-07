@@ -1,6 +1,6 @@
-import { call, put, takeEvery } from "redux-saga/effects";
-import { UsersActions } from "../actions/users.action";
-import { UsersApi } from "../api/users.api";
+import { call, put, takeEvery } from 'redux-saga/effects';
+import { UsersActions, GET_USERS } from '../actions/users.action';
+import { UsersApi } from '../api/users.api';
 
 /**
  * Saga Get Users
@@ -18,5 +18,5 @@ export function* getUsersSaga() {
  * Watch for getUser then launch getUsersSaga
  */
 export function* watchGetUsers() {
-  yield takeEvery(UsersActions.getUsers, getUsersSaga);
+  yield takeEvery(GET_USERS, getUsersSaga);
 }
