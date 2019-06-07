@@ -3,12 +3,16 @@
     "moduleResolution": "node",
     "target": "es5",
     "module": "es2015",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
     "lib": ["es2015", "es2016", "es2017", "dom"],
-    "strict": true,
+    "types": ["jest"],
+    "strict": false,
     "declaration": true,
-    "declarationDir": "./dist",
+    "declarationDir": "./lib",
     "noImplicitAny": true,
-    "outDir": "./dist"
+    "outDir": "./lib",
+    "baseUrl": "src"
   },
   "include": ["src/**/*"],
   "typedocOptions": {

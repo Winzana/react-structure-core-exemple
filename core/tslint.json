@@ -10,6 +10,7 @@
     "await-promise": true,
     "origin-ordered-imports": [true],
     "no-console": [true, "log", "error"],
+    "ordered-imports": false,
     "no-debugger": true,
     "no-eval": true,
     "no-this-assignment": true,
@@ -35,7 +36,7 @@
           "protected-instance-method",
           "private-instance-method"
         ],
-        "alphabetize": true
+        "alphabetize": false
       }
     ]
   },
@@ -47,7 +48,8 @@
       ".docz",
       "docs",
       "android",
-      "ios"
+      "ios",
+      "src/typings/**/*.ts"
     ]
   }
 }
