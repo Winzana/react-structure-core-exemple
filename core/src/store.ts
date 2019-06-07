@@ -1,4 +1,4 @@
-import { applyMiddleware, combineReducers, createStore } from 'redux';
+import { combineReducers, ReducersMapObject } from 'redux';
 import * as userReducers from './users/reducers/users.reducer';
 
 /**
@@ -26,9 +26,6 @@ export const rootReducer = combineReducers<IAppState>({
  */
 export function createRootReducer<T>(r: T) {
   const reducersMerged = ({
-    auth: authReducers.reducer,
-    events: eventReducers.reducer,
-    organizations: organizationReducers.reducer,
     users: userReducers.reducer,
     ...r,
   } as unknown) as ReducersMapObject<IAppState & T>;

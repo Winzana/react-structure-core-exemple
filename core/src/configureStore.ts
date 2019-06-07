@@ -24,10 +24,10 @@ export default function configureStore<T>(
   additionalsMiddlewares?: Middleware[],
   persistConfig?: PersistConfig,
 ) {
-  let middlewares: Middleware[] = [
-    ...[sagaMiddleware],
-    ...additionalsMiddlewares,
-  ];
+  let middlewares: Middleware[] = [sagaMiddleware];
+  if (additionalsMiddlewares) {
+    middlewares = [...middlewares, ...additionalsMiddlewares];
+  }
   if (Config.getInstance().isDevMode()) {
     console.warn('Dev mode enabled');
     middlewares = [...middlewares, createLogger];
@@ -35,7 +35,9 @@ export default function configureStore<T>(
 
   const reducer = persistConfig
     ? persistReducer(persistConfig, customRootReducer)
-    : customRootReducer;
+    : customRootReducer
+    ? customRootReducer
+    : rootReducer;
 
   const store = createStore(
     reducer,
