@@ -41,6 +41,7 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* mobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mobileTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
+		3F0C251522B2310900DDC778 /* ExportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F0C24EA22B2310900DDC778 /* ExportOptions.plist */; };
 		3F4717D771D5431BA8FCED66 /* libRNGestureHandler-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 289556D139CB4E72B77BE3CE /* libRNGestureHandler-tvOS.a */; };
 		490980282C144A1FBBC9EABF /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 330B78EAEA284333A058B139 /* Foundation.ttf */; };
 		51FC41F32833403D98F2F6C1 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3796617919884C7A9B6F1036 /* MaterialIcons.ttf */; };
@@ -405,6 +406,7 @@
 		36025818FA2F47228EDE9120 /* libRNGestureHandler.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNGestureHandler.a; sourceTree = "<group>"; };
 		3796617919884C7A9B6F1036 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		3A948790B2BC4D0CB1912EBE /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		3F0C24EA22B2310900DDC778 /* ExportOptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ExportOptions.plist; path = mobile/ExportOptions.plist; sourceTree = "<group>"; };
 		4FD4E94B75A946579997AB33 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		5527609820284CC68A8F2E0A /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		5BCB985CE328436B8F637C7C /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
@@ -570,6 +572,7 @@
 		13B07FAE1A68108700A75B9A /* mobile */ = {
 			isa = PBXGroup;
 			children = (
+				3F0C24EA22B2310900DDC778 /* ExportOptions.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -1258,6 +1261,7 @@
 				02D1EEDE8B814ECE9F47B308 /* AntDesign.ttf in Resources */,
 				1B644B43F1A5465DBAB2A8DA /* Entypo.ttf in Resources */,
 				A96DBD8DA9BE4508A1FA0336 /* EvilIcons.ttf in Resources */,
+				3F0C251522B2310900DDC778 /* ExportOptions.plist in Resources */,
 				D7D39C366EB44DE3BFEAEA8B /* Feather.ttf in Resources */,
 				84AA6B208BA14850953C177B /* FontAwesome.ttf in Resources */,
 				9BA4442D61994B46B3A00A30 /* FontAwesome5_Brands.ttf in Resources */,

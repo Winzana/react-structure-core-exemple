@@ -4,6 +4,7 @@
 .docz/
 # Xcode
 #
+ios/mobile.xcarchive
 build/
 *.pbxuser
 !default.pbxuser
