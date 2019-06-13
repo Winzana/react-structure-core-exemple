@@ -12,7 +12,7 @@ import { Provider as StoreProvider } from 'react-redux';
 import RootNavigation from '@navigation/root.navigation';
 import { theme } from './src/assets/styles/theme';
 import './src/translation/i18n'; // Need to be bundled
-const store = configureStore(__DEV__);
+const { store } = configureStore();
 runSagas(store);
 
 SplashScreen.hide();
