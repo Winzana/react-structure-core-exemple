@@ -1,4 +1,4 @@
-import { combineReducers, ReducersMapObject } from 'redux';
+import { combineReducers, Reducer } from 'redux';
 import * as userReducers from './users/reducers/users.reducer';
 
 /**
@@ -24,10 +24,10 @@ export const rootReducer = combineReducers<IAppState>({
  * }} reducers
  * @returns
  */
-export function createRootReducer<T>(r: T) {
-  const reducersMerged = ({
+export function createRootReducer<T>(r: { [key: string]: Reducer }) {
+  const reducersMerged = {
     users: userReducers.reducer,
     ...r,
-  } as unknown) as ReducersMapObject<IAppState & T>;
-  return combineReducers(reducersMerged);
+  };
+  return (combineReducers(reducersMerged) as unknown) as Reducer<IAppState & T>;
 }

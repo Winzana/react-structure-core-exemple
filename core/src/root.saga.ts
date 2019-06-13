@@ -1,4 +1,4 @@
-import { all, call, fork, put, select, take } from "redux-saga/effects";
+import { all, fork } from "redux-saga/effects";
 import { watchGetUsers } from "./users/sagas/users.saga";
 /**
  * Root sagas, contains all sagas

@@ -11,11 +11,6 @@ export default {
   output: [
     {
       dir: 'lib',
-      format: 'cjs',
-      sourcemap: true,
-    },
-    {
-      dir: 'lib',
       format: 'es',
       sourcemap: true,
     },
@@ -24,6 +19,5 @@ export default {
     ...Object.keys(pkg.dependencies || {}),
     ...Object.keys(pkg.peerDependencies || {}),
   ],
-
   plugins: [typescript(), commonjs(), resolve(), terser()],
 };
