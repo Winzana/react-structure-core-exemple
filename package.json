@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "install-all": "yarn install && node_modules/.bin/lerna bootstrap && cd core && yarn build && yarn link && cd ../web &&  yarn link core && cd ../",
     "test": "lerna run test"
   },
   "husky": {

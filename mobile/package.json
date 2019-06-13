@@ -15,7 +15,6 @@
     "ui-feat": "/bin/sh ./scaffolding-ui.sh"
   },
   "dependencies": {
-    "core": "link:../core",
     "i18next": "^15.1.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",

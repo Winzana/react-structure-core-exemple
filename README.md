@@ -1,5 +1,23 @@
 # react-shared
 
+## Initialisation du projet
+
+Installer le project : `make install-all`
+
+(Comprend le build-core/build-web)
+
+## Autre commandes
+
+Etablir les liens symboliques : `make link-all`
+
+Builder le core : `make build-core`
+
+Builder le web : `make build-web`
+
+Builder l'app ios ( Application mode Ad Hoc ) : `make build-ios`
+
+Builder l'app android : `make build-android`
+
 ## Folder structure
 
 ```bash
@@ -100,7 +118,7 @@
 
 ## Ajouter une nouvelle feature
 
-Ajouter une fonctionnalité dans le projet mobile ou web :
+Création d'une fonctionnalité dans le projet mobile ou web :
 
 ```bash
 web/mobile ── <feature-name>
@@ -112,7 +130,7 @@ web/mobile ── <feature-name>
            └── sample.styles.js
 ```
 
-Ajouter une fonctionnalité dans le projet core :
+Création d'une fonctionnalité dans le projet core :
 
 ```bash
 core ── <feature-name>

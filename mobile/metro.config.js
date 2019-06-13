@@ -6,7 +6,7 @@
  */
 const path = require('path');
 module.exports = {
-  watchFolders: [path.resolve(__dirname, `./node_modules/core`)],
+  watchFolders: [path.resolve(__dirname, `./../core`)],
   transformer: {
     getTransformOptions: async () => ({
       transform: {
