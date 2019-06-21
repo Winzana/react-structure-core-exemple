@@ -1,0 +1,6 @@
+{
+  "packages": ["core", "mobile", "web"],
+  "version": "independent",
+  "npmClient": "yarn",
+  "npmClientArgs": ["--ignore-prepublish"]
+}

@@ -1,0 +1,57 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "jsRules": {},
+  "rules": {
+    "ban-ts-ignore": true,
+    "no-magic-numbers": [true],
+    "no-unused-variable": true,
+    "no-unused-expression": true,
+    "no-namespace": true,
+    "no-non-null-assertion": true,
+    "await-promise": true,
+    "origin-ordered-imports": [true],
+    "no-console": [true, "log", "error"],
+    "ordered-imports": false,
+    "no-debugger": true,
+    "no-eval": true,
+    "no-this-assignment": true,
+    "no-var-keyword": true,
+    "max-classes-per-file": [true, 1],
+    "no-duplicate-imports": true,
+    "completed-docs": true,
+    "increment-decrement": true,
+    "unnecessary-else": true,
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-static-field",
+          "private-static-field",
+          "protected-static-field",
+          "public-instance-field",
+          "private-instance-field",
+          "protected-instance-field",
+          "public-constructor",
+          "private-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ],
+        "alphabetize": false
+      }
+    ]
+  },
+  "rulesDirectory": ["node_modules/tslint-origin-ordered-imports-rule/dist"],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**/*.ts",
+      "dist/**/*.ts",
+      ".docz",
+      "docs",
+      "android",
+      "ios",
+      "src/typings/**/*.ts"
+    ]
+  }
+}
