@@ -1,0 +1,25 @@
+{
+  "name": "root",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "test": "lerna run test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json}": [
+      "lerna run pre-commit"
+    ]
+  },
+  "devDependencies": {
+    "husky": "^2.1.0",
+    "lerna": "^3.13.4"
+  },
+  "dependencies": {
+    "lint-staged": "^8.1.5"
+  }
+}
