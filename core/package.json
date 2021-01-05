@@ -43,7 +43,7 @@
   "dependencies": {
     "@martin_hotell/rex-tils": "^2.1.1",
     "@types/redux-logger": "^3.0.7",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "redux": "^4.0.1",
     "redux-persist": "^5.10.0",
     "redux-saga": "^1.0.2"
